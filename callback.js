@@ -29,6 +29,7 @@ let divide =(a,b,cb) => {
         if(typeof a != 'number' || typeof b!='number'){
             return cb(new Error('Tham số truyền vào phải là số'));
         }
+        if(b==0) return cb(new Error('chia cho 0'));
         cb(undefined, a / b);
     }, 1000);
 }
@@ -46,7 +47,7 @@ let tinhDienTichHinhThang = (a,b,h,cb) =>{
         
     });
 }
-tinhDienTichHinhThang('2', 3, 2, (err, kq)=> {
+tinhDienTichHinhThang(2, 3, 2, (err, kq)=> {
     // if(err) return console.log(err + ''); // err + '' tuong duong voi err.toString()
     if(err) return console.log(err.toString());
     console.log('Dien tich la: ' + kq);

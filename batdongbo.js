@@ -2,5 +2,5 @@
 // bất đồng bộ: câu lệnh 1 chưa chạy xong thì đã chạy câu lệnh 2
 setTimeout(() => {
     console.log('da het 1s');
-}, 1000);
+}, 0);
 console.log('ket thuc');

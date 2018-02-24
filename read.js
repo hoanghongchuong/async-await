@@ -8,5 +8,5 @@ fs.readFile('./a.txt', 'utf8', (err, data) => {
 // let data = fs.readFileSync('./a.txt','utf8');
 // console.log(data);
 console.log('ket thuc');
-// không thể phân biệt được tác vụ là bất đồng bộ hay không đồng bộ. mà phải dựa vào docmentation của câu lệnh
+// không thể phân biệt được tác vụ là bất đồng bộ hay không đồng bộ. mà phải dựa vào documentation của câu lệnh
 // tuy nhiên có thể phân biệt theo cảm tính: resquest đến database, thao tác vs file, settimeout, request đến 1 trang web,...
